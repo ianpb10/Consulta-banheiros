@@ -1,4 +1,9 @@
-body {
+/* Cor principal */
+:root {
+    --primary-color: #008495;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
@@ -6,6 +11,15 @@ body {
   
   h1 {
     font-size: 2rem;
+  }
+  
+  /* Estilos customizados */
+  .bg-custom {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .text-custom {
+    color: var(--primary-color) !important;
   }
   
   #logo {
@@ -17,9 +31,16 @@ body {
     font-size: 1.2rem;
   }
   
-  button.btn {
+  button.btn-custom {
     height: 50px;
     font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  
+  button.btn-custom:hover {
+    background-color: #006f75;
   }
   
   #result {
