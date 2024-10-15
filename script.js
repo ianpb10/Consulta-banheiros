@@ -1,4 +1,4 @@
-// Pré-cadastro das linhas de ônibus (assumindo que o arquivo busLines.json existe)
+// Pré-cadastro das linhas de ônibus (assumindo busLines.json existe)
 let busLines = {};
 
 // Desativa o botão até o carregamento do JSON
