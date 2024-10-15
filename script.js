@@ -18,10 +18,18 @@ function searchLine() {
 
   if (line === "") {
     resultDiv.innerHTML = '<span class="text-danger">Por favor, digite o número da linha.</span>';
-  } else if (!busLines[line]) {
+    return;
+  }
+
+  const results = busLines[line]; // Recebe o array de resultados
+
+  if (!results) {
     resultDiv.innerHTML = '<span class="text-warning">Linha não cadastrada no sistema.</span>';
   } else {
-    const result = busLines[line];
-    resultDiv.innerHTML = `<strong>Endereço:</strong> ${result.address}<br><strong>Estabelecimento:</strong> ${result.establishment}`;
+    let output = `<strong>Resultados para a linha ${line}:</strong><br>`;
+    results.forEach((result, index) => {
+      output += `<strong>Local ${index + 1}:</strong> Endereço: ${result.address}, Estabelecimento: ${result.establishment}<br>`;
+    });
+    resultDiv.innerHTML = output;
   }
 }
