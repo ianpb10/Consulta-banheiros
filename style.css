@@ -1,48 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-input,
-button {
-    padding: 15px;
-    margin: 10px 0;
-    width: 100%;
-    font-size: 18px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#result {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #logo {
+    max-width: 200px;
+  }
+  
+  input.form-control {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  button.btn {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  #result {
     margin-top: 20px;
-    font-size: 18px;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-logo img {
-    max-width: 80%; /* Tamanho padrão para telas maiores */
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    .logo img {
-        max-width: 90%; /* Ajuste para tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        max-width: 100%; /* Para telas muito pequenas */
-    }
-}
-
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
